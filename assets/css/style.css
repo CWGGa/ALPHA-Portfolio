@@ -1427,6 +1427,18 @@ ul {
     .work-inside-content {
         height: 19%;
     }
+
+    .contact-page-content-description {
+        font-size: 0.7rem;
+    }
+
+    .contact-page-social-media-links {
+        width: 70%;
+    }
+
+    .contact-page-submit-button {
+        padding: 3%;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -1586,6 +1598,41 @@ ul {
         font-size: 1.5rem;
     }
 
+    .contact-page-page-title {
+        font-size: 2rem;
+    }
+
+    .contact-content-icon {
+        width: 20%;
+    }
+
+    .contact-page-title {
+        font-family: var(--Monte);
+        font-size: 0.8rem;
+        font-weight: 1000;
+        color: var(--color5);
+    }
+
+    .contact-page-content-description {
+        font-size: 0.6rem;
+    }
+
+    .contact-page-social-media-links {
+        width: 55%;
+    }
+
+    .location-map {
+        height: 100%;
+        width: 100%;
+    }
+
+    .location-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-page-submit-button {
+        padding: 2%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1788,6 +1835,35 @@ ul {
     .page-title {
         font-size: 2.3rem;
     }
+
+    .contact-page-page-title {
+        font-size: 1.3rem;
+        margin-top: 17%;
+    }
+
+    .contact-back-button {
+        top: 30px;
+    }
+
+    .contact-content-container {
+        margin: 0% 5%;
+        width: 90%;
+        height: 70%;
+    }
+
+    .contact-page-content-description {
+        font-size: 0.4rem;
+    }
+
+    .image-links {
+        padding: 0% 10%;
+    }
+
+    .contact-page-submit-button {
+        padding: 5%;
+        width: 40%;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1923,5 +1999,51 @@ ul {
 
     .work-description {
         font-size: 0.5rem;
+    }
+
+    .contact-page-page-title {
+        font-size: 1rem;
+        margin-top: 25%;
+    }
+
+    .contact-page-content-main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .contact-page-main-container {
+        height: 55vh;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .contact-page-content-description {
+        font-size: 0.6rem;
+    }
+
+    .contact-location-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .contact-page-submit-button {
+        padding: 4%;
+        width: 37%;
+        font-size: 0.8rem;
+    }
+
+    .location-title {
+        font-size: 1.5rem;
+        margin-bottom: 7%;
+    }
+
+    .location-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 6%;
     }
 }
