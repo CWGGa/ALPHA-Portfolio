@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALPHA - Contact Us</title>
+
+    <!-- Custome Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- SWEETALERT -->
+    <link rel="stylesheet" href="./assets/sweetalert/css/sweetalert2.min.css">
+    <script src="./assets/sweetalert/js/sweetalert2@9.js"></script>
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+
+    <script>
+        /*   window.addEventListener('load', function () {
+            document.documentElement.scrollTop = 0;
+            $("#firstname-contact-page").val("");
+            $("#lastname-contact-page").val("");
+            $("#email").val("");
+            $("#textarea").val("");
+        }); */
+    </script>
+
+</head>
+
+<body>
+
+    <header class="contact-main">
+        <button class="black-back-button">
+            <i class="fas fa-angle-left"></i>
+            <div class="go-back">
+                <p>Go Back</p>
+            </div>
+        </button>
+        <div class="contact-page-page-title">
+            <h1>CONTACT</h1>
+            <div class="line-below">
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+    <main class="contact-main">
+        <section class="contact-page-main-container">
+            <div class="contact-page-content-main-container">
+                <div class="contact-location contact-content-container">
+                    <img class="contact-content-icon" src="./assets/images/home-solid 1.svg" alt="home icon">
+                    <h2 class="contact-page-title">LOCATION</h2>
+                    <p class="contact-page-content-description">123, Manila, PH</p>
+                </div>
+                <div class="contact-phone contact-content-container">
+                    <img class="contact-content-icon" src="./assets/images/phone-alt-solid 1.svg" alt="phone icon">
+                    <h2 class="contact-page-title">PHONE:</h2>
+                    <p class="contact-page-content-description">(+69)123 456 7890</p>
+                </div>
+                <div class="contact-email contact-content-container">
+                    <img class="contact-content-icon" src="./assets/images/envelope-regular 1.svg" alt="email icon">
+                    <h2 class="contact-page-title">EMAIL</h2>
+                    <p class="contact-page-content-description">alphadevelopers@gmail.com</p>
+                </div>
+                <div class="contact-socialmedia contact-content-container">
+                    <img class="contact-content-icon" src="./assets/images/link-solid 1.svg" alt="link icon">
+                    <h2 class="contact-page-title">SOCIAL MEDIA:</h2>
+                    <div class="image-links">
+                        <a href="#">
+                            <img class="contact-page-social-media-links" src="./assets/images/facebook-solid-black.svg"
+                                alt="facebook black">
+                        </a>
+                        <a href="">
+                            <img class="contact-page-social-media-links"
+                                src="./assets/images/instagram-brands-solid-black.svg" alt="instagram black">
+                        </a>
+                        <a href="">
+                            <img class="contact-page-social-media-links"
+                                src="./assets/images/github-brands-solid-black.svg" alt="github black">
+                        </a>
+                        <a href="">
+                            <img class="contact-page-social-media-links"
+                                src="./assets/images/linkedin-in-brands-solid-black.svg" alt="linkedin black">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-contact-location-container">
+            <div class="contact-location-container">
+                <div class="contact-form-left">
+                    <form class="contact-page-contact-main-form">
+                        <div class="contact-page-contact-form">
+                            <div class="contact-page firstname-form">
+                                <input class="contact-page-box firstname-input" id="firstname-contact-page" name="name"
+                                    placeholder="First Name" type="text" required="required"
+                                    oninvalid="alert('Fill up the First Name');">
+                            </div>
+                            <div class="contact-page lastname-form">
+                                <input class="contact-page-box lastname-input" id="lastname-contact-page" name="name"
+                                    placeholder="Last Name" type="text" required="required">
+                            </div>
+                            <div class="contact-page email-form">
+                                <input class="contact-page-box email-input" id="email" name="email"
+                                    placeholder="Enter your Email" type="email" required="required">
+                            </div>
+                            <div class="contact-page message-form">
+                                <textarea class="contact-page-box message-input" id="textarea" name="textarea"
+                                    placeholder="Your Message..." cols="40" rows="5" required="required"
+                                    oninvalid="alert('Fill up the First Name');"></textarea>
+                            </div>
+                            <div class="contact-page-form-group-row">
+                                <button name="submit" type="submit" class="contact-page-submit-button">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="line-middle-container">
+                    <div class="line-middle">
+                    </div>
+                </div> -->
+                <div class="location-right">
+                    <h2 class="location-title">LOCATION MAP</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.9117651654133!2d120.98649461484024!3d14.604101989800254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f8b14eb259%3A0xad4d12caac9a068e!2sFEU%20Institute%20of%20Technology!5e0!3m2!1sen!2sph!4v1586160388230!5m2!1sen!2sph"
+                        width="600" height="450" frameborder="1" allowfullscreen="" aria-hidden="false" tabindex="0"
+                        class="location-map"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="copyright-black">
+        <p>@ Copyright Alpha 2020.</p>
+    </footer>
+
+    <div class="col-md-2">
+        <a href="#" class="btn btn-10"> <i class="glyphicon glyphicon-arrow-right"></i> </a>
+    </div>
+
+    <div class="scroll-top">
+        <img class="scroll-top-button" src="./assets/images/angle-up-solid 1.svg" alt="arrow-up">
+    </div>
+
+    <!-- JQUERY -->
+    <script src="./assets/javascript/jquery/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(document).ready(function (event) {
+            let scrollTop = $(".scroll-top");
+            scrollTop.hide((duratiom = 400));
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 200) {
+                    scrollTop.show((duratiom = 400));
+                } else {
+                    scrollTop.hide((duratiom = 400));
+                }
+            });
+
+            scrollTop.click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        });
+
+        $(document).ready(function () {
+            var fname = $("#firstname-contact-page").length;
+            var fname = $("#lastname-contact-page").length;
+            var lname = $("#email").length;
+            var message = $("#textarea").length;
+
+            $(".contact-page-contact-main-form").submit(function () {
+                swal.fire({
+                    title: "Message Sent!",
+                    text: "Thank you for messaging",
+                    timer: 5000
+                });
+                event.preventDefault(); //to prevent scrolling to top when sweetalert triggers
+                $("#firstname-contact-page").val("");
+                $("#lastname-contact-page").val("");
+                $("#email").val("");
+                $("#textarea").val("");
+            });
+        });
+
+        const backButton = document.querySelector('.black-back-button');
+
+        backButton.addEventListener('click', function () {
+            window.location = './index.html';
+        });
+    </script>
+</body>
+
+</html>

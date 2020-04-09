@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALPHA - Developers</title>
+
+    <!-- Custome Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="selection-main">
+        <a class="developers-page-transition" href="#">
+            <section class="main-developers">
+                <div class="developers-title">
+                    <h1>DEVELOPERS</h1>
+                </div>
+            </section>
+        </a>
+
+        <a href="#">
+            <section class="main-works">
+                <div class="works-title">
+                    <h1>WORKS</h1>
+                </div>
+            </section>
+        </a>
+
+        <a href="#">
+            <section class="main-aboutus">
+                <div class="aboutus-title">
+                    <h1>ABOUT US</h1>
+                </div>
+            </section>
+        </a>
+
+        <a href="#">
+            <section class="main-services">
+                <div class="services-title">
+                    <h1>SKILLS</h1>
+                </div>
+            </section>
+        </a>
+        <div class="home-button">
+            <img class="home-button-image" src="./assets/images/home-solid.svg" alt="home-solid">
+        </div>
+    </main>
+
+
+    <!-- Helps to synchronized and do multiple animations and control them the way we wanted  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <!-- Animate things in CSS like Colors and move things around -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js">
+    </script>
+    <!-- Helps to animate things in JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+
+
+    <script>
+        const homeButton = document.querySelector('.home-button');
+
+        homeButton.addEventListener('click', function () {
+            window.location = './index.html'
+        });
+    </script>
+</body>
+
+</html>

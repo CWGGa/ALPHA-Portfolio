@@ -1,0 +1,6 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="250" cy="250" r="247.5" stroke="#BF7E06" stroke-width="5"/>
+<circle cx="250" cy="250" r="178.5" stroke="#BF7E06" stroke-width="5"/>
+<circle cx="250" cy="250" r="142.5" stroke="#BF7E06" stroke-width="5"/>
+<path d="M463.5 250C463.5 367.913 367.913 463.5 250 463.5C132.087 463.5 36.5 367.913 36.5 250C36.5 132.087 132.087 36.5 250 36.5C367.913 36.5 463.5 132.087 463.5 250Z" stroke="#BF7E06" stroke-width="5"/>
+</svg>

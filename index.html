@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALPHA - Developers</title>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- PARALLAX -->
+
+    <script type="text/javascript" src="./assets/javascript/parallax-master/parallax.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <section class="main-section">
+            <div class="contact">
+                <a href="./contact.html" class="contact-button">Contact Us</a>
+            </div>
+            <div class="index-main-container">
+                <div class="main-title">
+                    <h1 class="alpha">ALPHA DEVELOPERS</h1>
+                    <div class="creative-portfolio">
+                        <p><span class="creative">Creative</span> <span class="portfolio">Portfolio</span>
+                        </p>
+                    </div>
+                    <div class="view-radius">
+                        <div class="view-portfolio">
+                            <a href="./selection.html" class="view">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-main-page-design">
+                    <ul class="main-page-design" id="scene">
+                        <li data-depth="0.4" class="layer">
+                            <img id="rectangleBlack" class="main-page-images rectangle_black"
+                                src="./assets/images/Rectangle 9.png" alt="Rectangle 9.">
+                        </li>
+                        <li data-depth="0.4" class="layer">
+                            <img id="circleLightColor" class="main-page-images circle_lightcolor"
+                                src="./assets/images/Ellipse 1.png" alt="Ellipse 1">
+                        </li>
+                        <li data-depth="0.4" class="layer">
+                            <img id="circleDarkColor" class="main-page-images circle_darkcolor"
+                                src="./assets/images/Ellipse 2.png" alt="Ellipse 2">
+                        </li>
+                        <li data-depth="0.4" class="layer">
+                            <img id="circleLines" class="main-page-images circle-lines"
+                                src="./assets/images/circle-lines.png" alt="circle-lines">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-main-page">
+                <p>@ Copyright Alpha 2020.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+
+        const bodyResize = document.querySelector('body');
+
+        window.addEventListener('resize', function () {
+            var windowSize = window.innerWidth;
+            const circleLines = document.getElementById('circleLines');
+            const circleDarkColor = document.getElementById('circleDarkColor');
+            const circleLightColor = document.getElementById('circleLightColor');
+            const rectangleBlack = document.getElementById('rectangleBlack');
+
+            if (windowSize >= 1920) {
+                circleLines.src = './assets/images/circle-lines.png';
+                circleDarkColor.src = './assets/images/Ellipse 2.png';
+                circleLightColor.src = './assets/images/Ellipse 1.png';
+                rectangleBlack.src = './assets/images/Rectangle 9.png';
+            } else if (windowSize >= 1200 && windowSize <= 1919) {
+                circleLines.src = './assets/images/circle-lines-1200.png';
+                circleDarkColor.src = './assets/images/Ellipse 2-1200.png';
+                circleLightColor.src = './assets/images/Ellipse 1-1200.png';
+                rectangleBlack.src = './assets/images/Rectangle 9-1200.png';
+            } else if (windowSize >= 992 && windowSize < 1200) {
+                circleLines.src = './assets/images/circle-lines-992.png';
+                circleDarkColor.src = './assets/images/Ellipse 2-992.png';
+                circleLightColor.src = './assets/images/Ellipse 1-992.png';
+                rectangleBlack.src = './assets/images/Rectangle 9-992.png';
+            } else if (windowSize >= 768 && windowSize < 992) {
+                circleLines.src = './assets/images/circle-lines-768.png';
+                circleDarkColor.src = './assets/images/Ellipse 2-768.png';
+                circleLightColor.src = './assets/images/Ellipse 1-768.png';
+                rectangleBlack.src = './assets/images/Rectangle 9-768.png';
+            } else if (windowSize < 768) {
+                circleLines.src = './assets/images/circle-lines-480.png';
+                circleDarkColor.src = './assets/images/Ellipse 2-480.png';
+                circleLightColor.src = './assets/images/Ellipse 1-480.png';
+                rectangleBlack.src = './assets/images/Rectangle 9-480.png';
+            }
+        });
+    </script>
+</body>
+
+</html>
