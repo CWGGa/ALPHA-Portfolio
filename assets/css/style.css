@@ -819,8 +819,9 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: var(--color7);
-    padding: 2% 1% 0% 1%;
+    padding: 7% 1% 2% 1%;
     border-radius: 20px;
+    height: 100%;
 }
 
 .item-contents {
@@ -831,7 +832,7 @@ ul {
 .gallery-title {
     font-family: var(--Monte);
     color: var(--color5);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .gallery-designer {
