@@ -1163,6 +1163,7 @@ ul {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background: #fff;
 }
 
 .scroll-top:hover {
