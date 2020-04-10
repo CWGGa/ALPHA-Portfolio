@@ -4,27 +4,20 @@ const worksButton = document.querySelector('.main-works');
 const skillsButton = document.querySelector('.main-services');
 
 const tl = new TimelineLite({
-
+    // paused: true,
+    // reversed: true
 });
 
 var devHeight = document.querySelector('.main-developers')
-window.addEventListener('load', function () {
+
+window.addEventListener('load', function (event) {
+
+    $('.home-button').css("display", "none");
 
     tl.to('.main-developers', 1, {
         ease: Power2.easeout,
         y: 0
     })
-
-    /*   tl.fromTo('.main-developers', 1, {
-        y: function () {
-            var devHeight = document.querySelector('.main-developers')
-            return -(devHeight.offsetHeight);
-        },
-        ease: Power2.easeout
-    }, {
-        y: 0
-    })
- */
 
     tl.to('.main-works', 1.1, {
         ease: Power2.easeout,
@@ -32,59 +25,30 @@ window.addEventListener('load', function () {
         delay: -1
     })
 
-    /*     tl.fromTo('.main-works', 1.1, {
-            x: function () {
-                var worWidth = document.querySelector('.main-works')
-                return (worWidth.offsetWidth);
-            },
-            ease: Power2.easeout
-        }, {
-            x: 0,
-            delay: -1
-        }) */
-
     tl.to('.main-aboutus', 1.2, {
         ease: Power2.easeout,
         x: 0,
         delay: -1
     })
 
-    /*     tl.fromTo('.main-aboutus', 1.2, {
-            x: function () {
-                var aboutusWidth = document.querySelector('.main-aboutus')
-                return -(aboutusWidth.offsetWidth);
-            },
-            ease: Power2.easeout
-        }, {
-            x: 0,
-            delay: -1
-        }) */
-
     tl.to('.main-services', 1.3, {
         ease: Power2.easeout,
         y: 0,
-        delay: -1
+        delay: -1,
+        onComplete: function () {
+            $('.home-button').css("display", "flex");
+        }
     })
 
-    /*     tl.fromTo('.main-services', 1.3, {
-            y: function () {
-                var servicesHeight = document.querySelector('.main-services')
-                return (servicesHeight.offsetHeight);
-            },
-            ease: Power2.easeout
-        }, {
-            y: 0,
-            delay: -1
-        }) */
 });
 
 // DEVELOPERS
 
-const developersAnimation = new TimelineLite({
-    // reversed: true
-});
+const developersAnimation = new TimelineLite({});
 
 developersButton.addEventListener('click', function () {
+
+    $('.home-button').css("display", "none");
 
     developersAnimation.to('.main-works', 1, {
         x: function () {
@@ -124,15 +88,7 @@ developersButton.addEventListener('click', function () {
         opacity: 0,
         ease: Power2.easeIn
     })
-    /*     developersAnimation.to('.main-developers', 1, {
-            y: function () {
-                var devHeight = document.querySelector('.main-developers')
-                return -(devHeight.offsetHeight);
-            },
-            ease: Power2.easeIn,
-            delay: 0.1
-        })
-     */
+
     developersAnimation.to('.main-developers', 1, {
         onComplete: function () {
             gotoDevelopersPage();
@@ -147,6 +103,8 @@ developersButton.addEventListener('click', function () {
 // ABOUT US 
 
 aboutusButton.addEventListener('click', function () {
+
+    $('.home-button').css("display", "none");
 
     developersAnimation.to('.main-works', 1, {
         x: function () {
@@ -186,17 +144,6 @@ aboutusButton.addEventListener('click', function () {
         opacity: 0,
         ease: Power2.easeIn
     })
-    /* developersAnimation.to('.main-aboutus', 1, {
-        x: function () {
-            var aboutusWidth = document.querySelector('.main-aboutus')
-            return -(aboutusWidth.offsetWidth);
-        },
-        ease: Power2.easeIn,
-        delay: 0.1,
-        onStart: function () {
-            gotoDevelopersPage();
-        }
-    }) */
 
     developersAnimation.to('.main-aboutus', 1, {
         onComplete: function () {
@@ -212,6 +159,8 @@ aboutusButton.addEventListener('click', function () {
 // WORKS
 
 worksButton.addEventListener('click', function () {
+
+    $('.home-button').css("display", "none");
 
     developersAnimation.to('.main-aboutus', 1, {
         x: function () {
@@ -251,14 +200,6 @@ worksButton.addEventListener('click', function () {
         opacity: 0,
         ease: Power2.easeIn
     })
-    /*     developersAnimation.to('.main-works', 1, {
-            x: function () {
-                var worWidth = document.querySelector('.main-works')
-                return (worWidth.offsetWidth);
-            },
-            ease: Power2.easeout,
-            delay: 0.1
-        }) */
 
     developersAnimation.to('.main-works', 1, {
         onComplete: function () {
@@ -274,6 +215,8 @@ worksButton.addEventListener('click', function () {
 // SKILLS
 
 skillsButton.addEventListener('click', function () {
+
+    $('.home-button').css("display", "none");
 
     developersAnimation.to('.main-aboutus', 1, {
         x: function () {
@@ -313,14 +256,6 @@ skillsButton.addEventListener('click', function () {
         opacity: 0,
         ease: Power2.easeIn
     })
-    /*     developersAnimation.to('.main-services', 1, {
-            x: function () {
-                var worWidth = document.querySelector('.main-services')
-                return (worWidth.offsetWidth);
-            },
-            ease: Power2.easeout,
-            delay: 0.1
-        }) */
 
     developersAnimation.to('.main-services', 1.3, {
         onComplete: function () {
