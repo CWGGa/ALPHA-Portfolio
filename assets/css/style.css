@@ -124,6 +124,7 @@ ul {
     background-color: transparent;
     border: 2px solid var(--color7);
     font-family: var(--Monte);
+    flex-direction: row;
 }
 
 .contact:hover {
