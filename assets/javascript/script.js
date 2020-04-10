@@ -3,10 +3,7 @@ const aboutusButton = document.querySelector('.main-aboutus');
 const worksButton = document.querySelector('.main-works');
 const skillsButton = document.querySelector('.main-services');
 
-const tl = new TimelineLite({
-    // paused: true,
-    // reversed: true
-});
+const tl = new TimelineLite({});
 
 var devHeight = document.querySelector('.main-developers')
 
