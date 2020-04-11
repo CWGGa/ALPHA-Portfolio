@@ -1575,12 +1575,13 @@ ul {
     .service-content-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
     }
 
     .service-content-description {
-        width: 20%;
+        /* width: 20%;
         margin: 0% 6%;
-        padding: 8%;
+        padding: 8%; */
         height: inherit;
     }
 
@@ -1675,6 +1676,10 @@ ul {
 
     .work-inside-content {
         height: 35px;
+    }
+
+    .service-content {
+        padding: 0% 3%;
     }
 }
 
@@ -1883,7 +1888,7 @@ ul {
     }
 
     .service-content-icon {
-        width: 20%;
+        width: 25%;
     }
 
     .page-title {
@@ -2180,5 +2185,9 @@ ul {
 
     .work-icon.work-inside-content {
         width: 22px;
+    }
+
+    .service-content-title {
+        font-size: 1rem;
     }
 }
