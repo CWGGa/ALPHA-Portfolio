@@ -2053,5 +2053,7 @@ ul {
         height: 20vh;
     }
 
-
+    .work-number {
+        font-size: 1rem;
+    }
 }
