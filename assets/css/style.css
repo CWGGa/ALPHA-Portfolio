@@ -553,7 +553,7 @@ ul {
     margin: 0% 1%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 40vh;
     padding: 0% 3%;
 }
@@ -875,7 +875,7 @@ ul {
     height: 30vh;
     display: flex;
     align-items: center;
-    padding: 0% 30% 0% 5%;
+    padding: 0% 20% 0% 5%;
     font-family: var(--Nuni);
     font-size: 2.5rem;
     margin: 5% 0%;
@@ -1414,7 +1414,8 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 3%;
+        padding: 2%;
+        font-size: 0.8rem;
     }
 }
 
@@ -1511,7 +1512,7 @@ ul {
     .assurance-main-description {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         height: 100vh;
     }
 
@@ -1621,6 +1622,14 @@ ul {
 
     .social-links-container {
         height: 35%;
+    }
+
+    .contact-design-top {
+        height: 15%;
+    }
+
+    .sub-description-container {
+        font-size: 2rem;
     }
 }
 
@@ -1740,7 +1749,9 @@ ul {
     }
 
     .assurance-main-description {
-        margin-top: 17%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
     }
 
     .contact-about-page-title {
@@ -1857,10 +1868,13 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 5%;
+        padding: 3%;
         width: 40%;
     }
 
+    .sub-description-container {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1945,12 +1959,12 @@ ul {
     }
 
     .assurance-main-description {
-        margin-top: 50%;
         padding: 0% 5%;
+        height: 75vh;
     }
 
     .content-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .content-icons {
@@ -1958,7 +1972,7 @@ ul {
     }
 
     .content-description {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .contact-about-page-title {
@@ -2028,7 +2042,7 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 4%;
+        padding: 3%;
         width: 37%;
         font-size: 0.8rem;
     }
@@ -2055,5 +2069,10 @@ ul {
 
     .work-number {
         font-size: 1rem;
+    }
+
+    .sub-description-container {
+        font-size: 1.1rem;
+        height: 25vh;
     }
 }
