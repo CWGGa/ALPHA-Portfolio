@@ -1064,16 +1064,18 @@ ul {
 .contact-page-contact-form {
     width: 100%;
     height: 100%;
-    display: table;
-    padding: 5% 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr auto;
+    padding: 5% 15%;
 }
 
 .contact-page {
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     font-family: var(--Nuni);
     color: var(--color5);
-    height: 17%;
+    height: 100%;
     margin: 0px auto;
 }
 
@@ -1090,14 +1092,14 @@ ul {
 
 .contact-page-form-group-row {
     width: 100%;
-    height: 10%;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
 .contact-page-submit-button {
     width: 20%;
-    padding: 2%;
+    padding: 3%;
     border: none;
     background: linear-gradient(to right, var(--color2), var(--color3));
     text-transform: uppercase;
@@ -1105,7 +1107,6 @@ ul {
     cursor: pointer;
     font-size: 1rem;
     border-radius: 30px;
-    margin: 0% 15% 0% 72%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1419,8 +1420,17 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 2%;
+        padding: 3%;
         font-size: 0.8rem;
+    }
+
+    .contact-content-icon {
+        width: 20%;
+    }
+
+    .contact-page-main-container {
+        height: 20vh;
+        width: 100%;
     }
 }
 
@@ -1619,7 +1629,8 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 2%;
+        padding: 4%;
+        width: 27%;
     }
 
     .about-social-links {
@@ -1640,6 +1651,10 @@ ul {
 
     .sub-description-container {
         font-size: 2rem;
+    }
+
+    .contact-page-main-container {
+        height: 18vh;
     }
 }
 
@@ -1866,12 +1881,12 @@ ul {
 
     .contact-content-container {
         margin: 0% 5%;
-        width: 90%;
-        height: 70%;
+        width: 80%;
+        height: 75%;
     }
 
     .contact-page-content-description {
-        font-size: 0.4rem;
+        font-size: 0.7rem;
     }
 
     .image-links {
@@ -1879,12 +1894,37 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 3%;
-        width: 40%;
+        padding: 6%;
+        width: 42%;
     }
 
     .sub-description-container {
         font-size: 1.5rem;
+    }
+
+    .contact-page-content-main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 0% 5%;
+    }
+
+    .contact-page-main-container {
+        height: 50vh;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .contact-page-title {
+        font-size: 0.9rem;
+    }
+
+    .contact-page-box:invalid {
+        height: 75%;
+    }
+
+    .contact-page-contact-form {
+        padding: 5% 8%;
     }
 }
 
@@ -2043,7 +2083,15 @@ ul {
     }
 
     .contact-page-content-description {
-        font-size: 0.6rem;
+        font-size: 0.52rem;
+    }
+
+    .contact-page-title {
+        font-size: 0.82rem;
+    }
+
+    .contact-content-icon {
+        width: 25%;
     }
 
     .contact-location-container {
@@ -2055,7 +2103,7 @@ ul {
 
     .contact-page-submit-button {
         padding: 3%;
-        width: 37%;
+        width: 30%;
         font-size: 0.8rem;
     }
 
@@ -2087,4 +2135,12 @@ ul {
         font-size: 1.1rem;
         height: 25vh;
     }
+
+    .contact-content-container {
+        margin: 0% 5%;
+        width: 80%;
+        height: 70%;
+    }
+
+
 }
