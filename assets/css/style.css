@@ -372,13 +372,14 @@ ul {
 }
 
 .developers-image {
-    width: 50vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+    padding: 0% 20%;
 }
 
 .developers-description {
-    width: 50vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -388,14 +389,21 @@ ul {
 .container-jc,
 .container-tricia,
 .container-prince {
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
-    padding: 10% 0%;
+    padding: 10% 0%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container-tricia {
+    margin: 10% 0%;
 }
 
 .jc.thin-border,
 .prince.thin-border {
-    width: 60%;
+    width: 100%;
     padding: 4%;
     border: 3px solid var(--color1);
     position: relative;
@@ -417,7 +425,7 @@ ul {
 }
 
 .tricia.thin-border {
-    width: 60%;
+    width: 100%;
     padding: 4%;
     border: 3px solid var(--color2);
     position: relative;
@@ -766,6 +774,19 @@ ul {
     color: var(--color5);
     padding: 2% 0%;
     margin-top: 5%;
+}
+
+.copyright-black-member-page {
+    height: 5%;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Monte);
+    font-size: 1rem;
+    color: var(--color5);
+    padding: 2% 0%;
+    margin-top: 14%;
 }
 
 .gallery-main {
@@ -1335,15 +1356,23 @@ ul {
 
     .jc.thin-border,
     .prince.thin-border {
-        width: 67%;
+        width: 100%;
+    }
+
+    .developers-image {
+        padding: 0% 9%;
     }
 
     .jc-backdesign {
         top: -95px;
     }
 
+    .container-tricia {
+        margin: 14% 0%;
+    }
+
     .tricia.thin-border {
-        width: 67%;
+        width: 100%;
     }
 
     .about-back-button {
@@ -1480,13 +1509,23 @@ ul {
         grid-template-columns: 1fr 1fr;
     }
 
+    .container-tricia {
+        margin: 10% 0%;
+    }
+
+    .tricia-backdesign {
+        bottom: -17%;
+        left: -24%;
+        width: 70%;
+    }
+
     .jc.thin-border,
     .prince.thin-border {
         width: 100%;
     }
 
     .developers-image {
-        padding: 10%;
+        padding: 7%;
     }
 
     .developer-name {
@@ -1682,6 +1721,10 @@ ul {
     .work-description {
         height: 100%;
     }
+
+    .copyright-black-member-page {
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1713,11 +1756,11 @@ ul {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
-        height: 137vh;
+        height: 151vh;
     }
 
     .developers-image {
-        padding: 10%;
+        padding: 12%;
         grid-row: 1/2;
         width: 100%;
     }
@@ -1727,10 +1770,15 @@ ul {
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        padding: 0% 10%;
     }
 
     .jc.thin-border,
     .prince.thin-border {
+        width: 88%;
+    }
+
+    .tricia.thin-border {
         width: 88%;
     }
 
@@ -1747,7 +1795,7 @@ ul {
     }
 
     .black-back-button {
-        top: 25%;
+        top: 5%;
     }
 
     .black-back-button {
@@ -1972,6 +2020,10 @@ ul {
     .work-description {
         height: 100%;
     }
+
+    .copyright-black-member-page {
+        margin-top: 0%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -2012,18 +2064,49 @@ ul {
     }
 
     .black-back-button {
-        top: 2%;
+        top: 5%;
     }
 
     .jc.thin-border,
     .prince.thin-border {
         width: 100%;
+        margin-top: 39%;
+    }
+
+    .tricia.thin-border {
+        width: 100%;
+        margin-top: 39%;
+    }
+
+    .container-jc,
+    .container-prince {
+        height: 135vh;
+    }
+
+    .container-tricia {
+        height: 135vh;
     }
 
     .jc-backdesign {
         top: -68px;
         left: -61px;
         width: 75%;
+    }
+
+    .developers-image {
+        padding: 8%;
+    }
+
+    .developer-name {
+        font-size: 1.5rem;
+    }
+
+    .skills {
+        font-size: 1rem;
+    }
+
+    .developer-description {
+        font-size: 0.9rem;
     }
 
     .developers-description {
