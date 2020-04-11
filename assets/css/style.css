@@ -1408,7 +1408,15 @@ ul {
     }
 
     .work-inside-content {
-        height: 19%;
+        height: 40px;
+    }
+
+    .work-number {
+        font-size: 2rem;
+    }
+
+    .work-description {
+        font-size: 1.3rem;
     }
 
     .contact-page-content-description {
@@ -1655,6 +1663,18 @@ ul {
 
     .contact-page-main-container {
         height: 18vh;
+    }
+
+    .service-content-title {
+        font-size: 1.2rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
+
+    .work-inside-content {
+        height: 35px;
     }
 }
 
@@ -1926,6 +1946,22 @@ ul {
     .contact-page-contact-form {
         padding: 5% 8%;
     }
+
+    .service-content-title {
+        font-size: 1.3rem;
+    }
+
+    .service-description {
+        font-size: 1rem;
+    }
+
+    .work-inside-content {
+        height: 30px;
+    }
+
+    .work-number {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -2062,7 +2098,7 @@ ul {
     }
 
     .work-description {
-        font-size: 0.5rem;
+        font-size: 0.57rem;
     }
 
     .contact-page-page-title {
@@ -2142,5 +2178,7 @@ ul {
         height: 70%;
     }
 
-
+    .work-icon.work-inside-content {
+        width: 22px;
+    }
 }
