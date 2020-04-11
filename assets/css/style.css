@@ -116,11 +116,19 @@ ul {
     font-size: 1rem;
     border-radius: 30px;
     padding: 1%;
-    z-index: 1;
+    z-index: 10;
     background-color: transparent;
     border: 2px solid var(--color7);
     font-family: var(--Monte);
     flex-direction: row;
+}
+
+.contact-us-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact:hover {
@@ -1295,8 +1303,9 @@ ul {
 
 
 @media screen and (max-width: 1200px) {
+
     .contact {
-        height: 6vh;
+        padding: 1.4%;
     }
 
     .view-portfolio {
@@ -1416,6 +1425,11 @@ ul {
 }
 
 @media screen and (max-width: 992px) {
+
+    .contact {
+        padding: 1.5%;
+    }
+
     .view-portfolio {
         padding: 0.9rem;
     }
@@ -1630,9 +1644,10 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+
     .contact {
-        height: 6vh;
-        padding: 2%;
+        padding: 2.5%;
+        font-size: 0.9rem;
     }
 
     .view-portfolio {
@@ -1874,9 +1889,10 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
+
     .contact {
-        height: 6vh;
-        padding: 2%;
+        padding: 3%;
+        font-size: 0.8rem;
     }
 
     .view-portfolio {
