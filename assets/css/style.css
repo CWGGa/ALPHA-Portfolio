@@ -1579,9 +1579,6 @@ ul {
     }
 
     .service-content-description {
-        /* width: 20%;
-        margin: 0% 6%;
-        padding: 8%; */
         height: inherit;
     }
 
@@ -1680,6 +1677,10 @@ ul {
 
     .service-content {
         padding: 0% 3%;
+    }
+
+    .work-description {
+        height: 100%;
     }
 }
 
@@ -1967,6 +1968,10 @@ ul {
     .work-number {
         font-size: 1.3rem;
     }
+
+    .work-description {
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -2104,6 +2109,7 @@ ul {
 
     .work-description {
         font-size: 0.57rem;
+        height: 100%;
     }
 
     .contact-page-page-title {
