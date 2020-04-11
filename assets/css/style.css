@@ -844,6 +844,7 @@ ul {
 
 .gallery-picture {
     width: unset;
+    height: 75%;
 }
 
 .table-bottom {
