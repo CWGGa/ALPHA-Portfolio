@@ -582,6 +582,9 @@ ul {
     height: 150vh;
     width: 100%;
     background-color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .contact-design-top {
@@ -715,6 +718,10 @@ ul {
     margin: 0% 2%;
     padding: 4%;
     cursor: pointer;
+}
+
+.about-link-icon {
+    width: 100%;
 }
 
 .copyright {
@@ -1125,6 +1132,7 @@ ul {
 
 .message-form {
     height: 30%;
+    width: 100%;
 }
 
 .location-right {
@@ -1374,7 +1382,11 @@ ul {
     }
 
     .social-links-container {
-        height: 40%;
+        height: 35%;
+    }
+
+    .about-link-icon {
+        width: 60%;
     }
 
     .copyright {
@@ -1598,6 +1610,18 @@ ul {
     .contact-page-submit-button {
         padding: 2%;
     }
+
+    .about-social-links {
+        height: 45vh;
+    }
+
+    .contact-main-container {
+        height: 90vh;
+    }
+
+    .social-links-container {
+        height: 35%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1740,8 +1764,16 @@ ul {
         width: 25%;
     }
 
+    .contact-main-container {
+        height: 90vh;
+    }
+
     .social-links-container {
-        height: 43%;
+        height: 35%;
+    }
+
+    .about-link-icon {
+        width: 50%;
     }
 
     .copyright {
@@ -1914,6 +1946,7 @@ ul {
 
     .assurance-main-description {
         margin-top: 50%;
+        padding: 0% 5%;
     }
 
     .content-title {
@@ -1941,7 +1974,7 @@ ul {
     }
 
     .social-links-container {
-        height: 35%;
+        height: 45%;
     }
 
     .black-back-button-dark {
@@ -2011,4 +2044,14 @@ ul {
         justify-content: space-around;
         padding: 6%;
     }
+
+    .contact-main-container {
+        height: 70vh;
+    }
+
+    .about-social-links {
+        height: 20vh;
+    }
+
+
 }
