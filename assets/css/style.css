@@ -389,9 +389,6 @@ ul {
 .container-jc,
 .container-tricia,
 .container-prince {
-    /* display: flex;
-    justify-content: space-evenly;
-    padding: 10% 0%; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
