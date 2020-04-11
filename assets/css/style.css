@@ -553,7 +553,7 @@ ul {
     margin: 0% 1%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     height: 40vh;
     padding: 0% 3%;
 }
@@ -1512,7 +1512,7 @@ ul {
     .assurance-main-description {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         height: 100vh;
     }
 
@@ -1622,6 +1622,10 @@ ul {
 
     .social-links-container {
         height: 35%;
+    }
+
+    .contact-design-top {
+        height: 15%;
     }
 }
 
@@ -1741,7 +1745,9 @@ ul {
     }
 
     .assurance-main-description {
-        margin-top: 17%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
     }
 
     .contact-about-page-title {
@@ -1946,12 +1952,12 @@ ul {
     }
 
     .assurance-main-description {
-        margin-top: 50%;
         padding: 0% 5%;
+        height: 75vh;
     }
 
     .content-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .content-icons {
@@ -1959,7 +1965,7 @@ ul {
     }
 
     .content-description {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .contact-about-page-title {
