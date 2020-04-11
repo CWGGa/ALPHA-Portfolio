@@ -1414,7 +1414,8 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 3%;
+        padding: 2%;
+        font-size: 0.8rem;
     }
 }
 
@@ -1857,7 +1858,7 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 5%;
+        padding: 3%;
         width: 40%;
     }
 
@@ -2028,7 +2029,7 @@ ul {
     }
 
     .contact-page-submit-button {
-        padding: 4%;
+        padding: 3%;
         width: 37%;
         font-size: 0.8rem;
     }
