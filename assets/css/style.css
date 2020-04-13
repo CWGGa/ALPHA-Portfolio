@@ -121,6 +121,10 @@ ul {
 	border: 2px solid var(--color7);
 	font-family: var(--Monte);
 	flex-direction: row;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .contact-us-text {
@@ -314,7 +318,10 @@ ul {
 	height: 20%;
 	cursor: pointer;
 	position: relative;
-	transition: 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	overflow: hidden;
 }
 
@@ -339,7 +346,10 @@ ul {
 	width: 20%;
 	transform: translateY(215%);
 	opacity: 0;
-	transition: 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	z-index: -1;
 }
 
@@ -497,6 +507,7 @@ ul {
 .github {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	font-size: 2rem;
 	color: var(--color1);
@@ -1271,15 +1282,19 @@ ul {
 	height: 50px;
 	position: relative;
 	overflow: hidden;
-	transition: all .5s;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
 }
 
 .fa-angle-left {
 	position: absolute;
 	left: 0px;
-	transition: 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
 	opacity: 0;
 }
 
@@ -1311,7 +1326,10 @@ ul {
 	font-family: var(--Monte);
 	font-size: 1rem;
 	border: none;
-	transition: 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
 	box-shadow: 0px 1px 2px 0px var(--color5);
 	cursor: pointer;
 }
@@ -1344,7 +1362,10 @@ ul {
 	font-family: var(--Monte);
 	font-size: 1rem;
 	border: none;
-	transition: 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
 	box-shadow: 0px 1px 2px 0px var(--color5);
 	cursor: pointer;
 }
