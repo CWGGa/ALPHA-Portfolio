@@ -1,3 +1,9 @@
+/* ----------------------------------------------------------- */
+/* ------------------------- BASIC SETUP ----------------------*/
+/* ----------------------------------------------------------- */
+
+/* ------- Fonts ------- */
+
 @font-face {
 	font-family: 'Montserrat';
 	src: url('../fonts/Montserrat/montserrat-light-webfont.woff2') format('woff2'),
@@ -22,7 +28,9 @@
 		url('../fonts/Barlow Semi Condensed Regular/barlowsemicondensed-regular-webfont.woff') format('woff');
 }
 
-/* Global Style */
+/* ------- END OF Fonts ------- */
+
+/* -------- Global Style ------- */
 
 *,
 *::before,
@@ -68,6 +76,8 @@ ul {
 	list-style: none;
 }
 
+/* -------- END OF Global Style ------- */
+
 .monte {
 	font-family: var(--Monte);
 }
@@ -88,12 +98,9 @@ ul {
 	font-family: var(--barlo);
 }
 
-.index-main-container {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-}
+/* ----------------------------------------------------------- */
+/* ------------------------- INDEX.html -----------------------*/
+/* ----------------------------------------------------------- */
 
 .main-section {
 	height: 100vh;
@@ -103,11 +110,7 @@ ul {
 	position: relative;
 }
 
-.container-main-page-design {
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-}
+/* -------- Buttons ------- */
 
 .contact {
 	position: absolute;
@@ -127,6 +130,15 @@ ul {
 	transition: all 0.3s ease;
 }
 
+.contact:hover {
+	background-color: var(--color2);
+	border: 2px solid var(--color2);
+}
+
+.contact:hover a {
+	color: var(--color5);
+}
+
 .contact-us-text {
 	height: 100%;
 	width: 100%;
@@ -135,13 +147,13 @@ ul {
 	align-items: center;
 }
 
-.contact:hover {
-	background-color: var(--color2);
-	border: 2px solid var(--color2);
-}
+/* -------- END OF Buttons ------- */
 
-.contact:hover a {
-	color: var(--color5);
+.index-main-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
 }
 
 .main-title {
@@ -153,13 +165,13 @@ ul {
 	z-index: 1;
 }
 
-.alpha {
-	font-family: var(--Monte);
-}
-
 .main-title h1 {
 	font-size: 3rem;
 	font-weight: 100;
+} /* be right back */
+
+.alpha {
+	font-family: var(--Monte);
 }
 
 .creative-portfolio {
@@ -170,8 +182,17 @@ ul {
 	font-family: var(--Poi);
 }
 
+.portfolio {
+	font-family: var(--Pop);
+}
+
 .view-radius {
 	border-radius: 30px;
+}
+
+.view {
+	color: var(--color9);
+	font-family: var(--Nuni);
 }
 
 .view-portfolio {
@@ -185,14 +206,33 @@ ul {
 	align-items: center;
 }
 
-.portfolio {
-	font-family: var(--Pop);
+.container-main-page-design {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
 }
 
-.view {
-	color: var(--color9);
-	font-family: var(--Nuni);
+.copyright-main-page {
+	height: 5%;
+	width: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--Monte);
+	font-size: 1rem;
+	color: var(--color7);
+	padding: 2% 0%;
+	position: absolute;
+	bottom: 0;
 }
+
+/* ----------------------------------------------------------- */
+/* --------------------- END OF INDEX.html --------------------*/
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* ----------------------- SELECTION.html ---------------------*/
+/* ----------------------------------------------------------- */
 
 .selection-main {
 	height: 100vh;
@@ -227,27 +267,6 @@ ul {
 	font-family: var(--barlo);
 }
 
-.main-aboutus {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	transform: translateX(-100%);
-	height: 38vh;
-	width: 58vw;
-	background-color: var(--color5);
-	display: flex;
-	justify-content: flex-end;
-	padding: 4% 2% 0% 0%;
-	color: var(--color7);
-	font-size: 2rem;
-	box-shadow: 2px -1px 50px -5px var(--color5);
-	z-index: 20;
-}
-
-.aboutus-title {
-	font-family: var(--barlo);
-}
-
 .main-works {
 	position: absolute;
 	right: 0;
@@ -267,6 +286,27 @@ ul {
 }
 
 .works-title {
+	font-family: var(--barlo);
+}
+
+.main-aboutus {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateX(-100%);
+	height: 38vh;
+	width: 58vw;
+	background-color: var(--color5);
+	display: flex;
+	justify-content: flex-end;
+	padding: 4% 2% 0% 0%;
+	color: var(--color7);
+	font-size: 2rem;
+	box-shadow: 2px -1px 50px -5px var(--color5);
+	z-index: 20;
+}
+
+.aboutus-title {
 	font-family: var(--barlo);
 }
 
@@ -292,23 +332,7 @@ ul {
 	font-family: var(--barlo);
 }
 
-.back-button {
-	background-color: var(--color2);
-	height: 5rem;
-	width: 5rem;
-}
-
-.member-main,
-.services-main,
-.contact-main {
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
-	height: inherit;
-	width: 100%;
-	background-image: url('../images/dusty.svg');
-	background-repeat: repeat;
-}
+/* -------- Buttons ------- */
 
 .home-button {
 	display: flex;
@@ -353,6 +377,34 @@ ul {
 	z-index: -1;
 }
 
+.back-button {
+	background-color: var(--color2);
+	height: 5rem;
+	width: 5rem;
+}
+
+/* -------- END OF Buttons ------- */
+
+/* ----------------------------------------------------------- */
+/* -------------------- END OF SELECTION.html -----------------*/
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* ------------------------- MEMBER.html ----------------------*/
+/* ----------------------------------------------------------- */
+
+.member-main,
+.services-main,
+.contact-main {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	height: inherit;
+	width: 100%;
+	background-image: url('../images/dusty.svg');
+	background-repeat: repeat;
+}
+
 .page-title {
 	display: flex;
 	justify-self: flex-start;
@@ -381,21 +433,6 @@ ul {
 	margin-top: 20%;
 }
 
-.developers-image {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	padding: 0% 20%;
-}
-
-.developers-description {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0% 5%;
-}
-
 .container-jc,
 .container-tricia,
 .container-prince {
@@ -404,8 +441,11 @@ ul {
 	grid-template-rows: 1fr;
 }
 
-.container-tricia {
-	margin: 10% 0%;
+.developers-image {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0% 20%;
 }
 
 .jc.thin-border,
@@ -421,6 +461,31 @@ ul {
 	top: -131px;
 	z-index: -1;
 	left: -101px;
+}
+
+.developer-name {
+	font-family: var(--Monte);
+	font-size: 3rem;
+	font-weight: 100;
+	margin: 0.5rem 0rem;
+}
+
+.skills {
+	font-family: var(--Pop);
+	font-size: 2rem;
+	margin: 0.5rem 0rem;
+}
+
+.developers-description {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0% 5%;
+}
+
+.container-tricia {
+	margin: 10% 0%;
 }
 
 .prince-backdesign {
@@ -459,19 +524,6 @@ ul {
 	align-items: flex-end;
 	width: 100%;
 	height: 100%;
-}
-
-.developer-name {
-	font-family: var(--Monte);
-	font-size: 3rem;
-	font-weight: 100;
-	margin: 0.5rem 0rem;
-}
-
-.skills {
-	font-family: var(--Pop);
-	font-size: 2rem;
-	margin: 0.5rem 0rem;
 }
 
 .developer-description {
@@ -541,6 +593,27 @@ ul {
 
 /* ----- END OF Work Links ----- */
 
+.copyright-black-member-page {
+	height: 5%;
+	width: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--Monte);
+	font-size: 1rem;
+	color: var(--color5);
+	padding: 2% 0%;
+	margin-top: 14%;
+}
+
+/* ----------------------------------------------------------- */
+/* --------------------- END OF MEMBER.html -------------------*/
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* -------------------------- ABOUT.html ----------------------*/
+/* ----------------------------------------------------------- */
+
 .about-main-title {
 	height: 65vh;
 	background-image: url('../images/about-title-lines.svg');
@@ -586,18 +659,6 @@ ul {
 	padding: 2%;
 }
 
-.aboutus-image-right {
-	width: 50vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2%;
-}
-
-.image-programmer {
-	width: 100%;
-}
-
 .highlighted {
 	color: var(--color2);
 	font-family: var(--Pop);
@@ -616,6 +677,18 @@ ul {
 	font-family: var(--Nuni);
 	font-size: 1rem;
 	margin: 1% 0%;
+}
+
+.aboutus-image-right {
+	width: 50vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2%;
+}
+
+.image-programmer {
+	width: 100%;
 }
 
 .assurance-main-description {
@@ -657,6 +730,13 @@ ul {
 	margin: 4% 0%;
 }
 
+.contact-design-top {
+	width: 100%;
+	height: 25%;
+	position: absolute;
+	bottom: -1px;
+}
+
 .contact-main-container {
 	height: 150vh;
 	width: 100%;
@@ -664,13 +744,6 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-}
-
-.contact-design-top {
-	width: 100%;
-	height: 25%;
-	position: absolute;
-	bottom: -1px;
 }
 
 .contact-about-page-title {
@@ -710,6 +783,10 @@ ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.main-contact-form {
+	width: 30%;
 }
 
 #firstname {
@@ -757,10 +834,6 @@ ul {
 	justify-content: flex-end;
 	margin: 3% 0%;
 	padding: 5%;
-}
-
-.main-contact-form {
-	width: 30%;
 }
 
 .submit {
@@ -816,19 +889,9 @@ ul {
 	padding: 2% 0%;
 }
 
-.copyright-main-page {
-	height: 5%;
-	width: inherit;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: var(--Monte);
-	font-size: 1rem;
-	color: var(--color7);
-	padding: 2% 0%;
-	position: absolute;
-	bottom: 0;
-}
+/* ----------------------------------------------------------- */
+/* --------------------- END OF MEMBER.html -------------------*/
+/* ----------------------------------------------------------- */
 
 .copyright-black {
 	height: 5%;
@@ -841,19 +904,14 @@ ul {
 	color: var(--color5);
 	padding: 2% 0%;
 	margin-top: 5%;
-}
+} /*---- COntact.html ----*/
 
-.copyright-black-member-page {
-	height: 5%;
-	width: inherit;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: var(--Monte);
-	font-size: 1rem;
-	color: var(--color5);
-	padding: 2% 0%;
-	margin-top: 14%;
+/* ----------------------------------------------------------- */
+/* ------------------------- GALLERY.html ---------------------*/
+/* ----------------------------------------------------------- */
+
+.gallery-transition {
+	background-color: var(--color5);
 }
 
 .gallery-main {
@@ -888,6 +946,11 @@ ul {
 	width: 4rem;
 }
 
+.swiper-container {
+	height: 50vh;
+	padding: 0px !important;
+}
+
 .gallery-description-container {
 	width: 100%;
 	height: 65vh;
@@ -901,16 +964,12 @@ ul {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-}
+} /*----- be right back -----*/
 
-.gallery-transition {
-	background-color: var(--color5);
-}
-
-.swiper-container {
-	height: 50vh;
-	padding: 0px !important;
-}
+.item-contents {
+	height: 100%;
+	width: 100%;
+} /*----- be right back -----*/
 
 .single_image {
 	display: flex;
@@ -921,11 +980,6 @@ ul {
 	padding: 7% 1% 2% 1%;
 	border-radius: 20px;
 	height: 100%;
-}
-
-.item-contents {
-	height: 100%;
-	width: 100%;
 }
 
 .gallery-title {
@@ -958,6 +1012,14 @@ ul {
 	width: 30%;
 	z-index: 10;
 }
+
+/* ----------------------------------------------------------- */
+/* --------------------- END OF GALLERY.html ------------------*/
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* ------------------------- SERVICE.html ---------------------*/
+/* ----------------------------------------------------------- */
 
 .services.page-title {
 	height: 20vh;
