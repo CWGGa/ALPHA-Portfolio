@@ -168,7 +168,9 @@ ul {
 .main-title h1 {
 	font-size: 3rem;
 	font-weight: 100;
-} /* be right back */
+}
+
+/* be right back */
 
 .alpha {
 	font-family: var(--Monte);
@@ -904,7 +906,9 @@ ul {
 	color: var(--color5);
 	padding: 2% 0%;
 	margin-top: 5%;
-} /*---- COntact.html ----*/
+}
+
+/*---- COntact.html ----*/
 
 /* ----------------------------------------------------------- */
 /* ------------------------- GALLERY.html ---------------------*/
@@ -964,12 +968,16 @@ ul {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-} /*----- be right back -----*/
+}
+
+/*----- be right back -----*/
 
 .item-contents {
 	height: 100%;
 	width: 100%;
-} /*----- be right back -----*/
+}
+
+/*----- be right back -----*/
 
 .single_image {
 	display: flex;
@@ -1266,7 +1274,7 @@ ul {
 	border: 1px solid var(--color5);
 	border: none;
 	border-radius: 10px;
-	box-shadow: 0px 1px 1px 0px var(--color5);
+	box-shadow: 0px 1px 2px 0px #ae7203;
 }
 
 .contact-page-box:hover {
@@ -1276,13 +1284,6 @@ ul {
 .contact-page-box:focus {
 	border: 2px solid #1877f2;
 	box-shadow: 0px 3px 6px 0px var(--color5);
-}
-
-.contact-page-box:invalid {
-	border: 1px solid var(--color5);
-	border: none;
-	border-radius: 10px;
-	box-shadow: 0px 1px 2px 0px red;
 }
 
 .message-form {

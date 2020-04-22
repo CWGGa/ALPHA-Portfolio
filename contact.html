@@ -94,25 +94,26 @@
                     <form class="contact-page-contact-main-form">
                         <div class="contact-page-contact-form">
                             <div class="contact-page firstname-form">
-                                <input class="contact-page-box firstname-input" id="firstname-contact-page" name="name"
-                                    placeholder="First Name" type="text" required="required"
+                                <input class="contact-page-box firstname-input" tabindex="1" id="firstname-contact-page"
+                                    name="name" placeholder="First Name" type="text" required="required"
                                     oninvalid="alert('Fill up the First Name');">
                             </div>
                             <div class="contact-page lastname-form">
-                                <input class="contact-page-box lastname-input" id="lastname-contact-page" name="name"
-                                    placeholder="Last Name" type="text" required="required">
+                                <input class="contact-page-box lastname-input" tabindex="2" id="lastname-contact-page"
+                                    name="name" placeholder="Last Name" type="text" required="required">
                             </div>
                             <div class="contact-page email-form">
-                                <input class="contact-page-box email-input" id="email" name="email"
+                                <input class="contact-page-box email-input" tabindex="3" id="email" name="email"
                                     placeholder="Enter your Email" type="email" required="required">
                             </div>
                             <div class="contact-page message-form-contact-page">
-                                <textarea class="contact-page-box message-input" id="textarea" name="textarea"
-                                    placeholder="Your Message..." cols="40" rows="5" required="required"
+                                <textarea class="contact-page-box message-input" tabindex="4" id="textarea"
+                                    name="textarea" placeholder="Your Message..." cols="40" rows="5" required="required"
                                     oninvalid="alert('Fill up the First Name');"></textarea>
                             </div>
                             <div class="contact-page-form-group-row">
-                                <button name="submit" type="submit" class="contact-page-submit-button">Submit</button>
+                                <button name="submit" type="submit" class="contact-page-submit-button"
+                                    tabindex="5">Submit</button>
                             </div>
                         </div>
                     </form>
