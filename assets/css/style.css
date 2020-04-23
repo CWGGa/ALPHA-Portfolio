@@ -1476,6 +1476,40 @@ ul {
 		font-size: 2.5rem;
 	}
 
+	.developer-name {
+		font-size: 2.5rem;
+	}
+
+	.skills {
+		font-size: 1.5rem;
+	}
+
+	.developer-description {
+		font-size: 1rem;
+	}
+
+	.link-title {
+		font-size: 1rem;
+	}
+
+	.line {
+		height: 0.2rem;
+	}
+
+	.link-title .line {
+		width: 11rem;
+	}
+
+	.tricia-backdesign {
+		width: 75%;
+	}
+
+	.prince-backdesign {
+		bottom: -30%;
+		right: -36%;
+		width: 90%;
+	}
+
 	.main-works {
 		font-size: 2.2rem;
 	}
@@ -1503,6 +1537,7 @@ ul {
 
 	.jc-backdesign {
 		top: -95px;
+		width: 80%;
 	}
 
 	.container-tricia {
@@ -1652,7 +1687,13 @@ ul {
 
 	.tricia-backdesign {
 		bottom: -17%;
-		left: -24%;
+		left: -20%;
+		width: 70%;
+	}
+
+	.prince-backdesign {
+		bottom: -23%;
+		right: -24%;
 		width: 70%;
 	}
 
@@ -1666,15 +1707,39 @@ ul {
 	}
 
 	.developer-name {
-		font-size: 2rem;
+		font-size: 1.9rem;
 	}
 
 	.skills {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 
 	.developer-description {
-		font-size: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.link-title {
+		font-size: 0.9rem;
+	}
+
+	.link-title .line {
+		width: 10rem;
+	}
+
+	.linkedin,
+	.github {
+		font-size: 1.5rem;
+		height: 40px;
+		width: 40px;
+	}
+
+	.jc-backdesign {
+		top: -95px;
+		width: 85%;
+	}
+
+	.jc-backdesign {
+		left: -80px;
 	}
 
 	.tricia.thin-border {
@@ -2202,20 +2267,35 @@ ul {
 		top: 5%;
 	}
 
-	.jc.thin-border,
+	.link-title {
+		font-size: 0.7rem;
+	}
+
+	.link-title .line {
+		width: 8rem;
+	}
+
+	.jc.thin-border {
+		width: 80%;
+		margin-top: 30%;
+	}
+
 	.prince.thin-border {
-		width: 100%;
-		margin-top: 39%;
+		width: 80%;
+		margin-top: 10%;
 	}
 
 	.tricia.thin-border {
-		width: 100%;
-		margin-top: 39%;
+		width: 80%;
+		margin-top: 0%;
 	}
 
-	.container-jc,
+	.container-jc {
+		height: 145vh;
+	}
+
 	.container-prince {
-		height: 135vh;
+		height: 117vh;
 	}
 
 	.container-tricia {
@@ -2229,7 +2309,7 @@ ul {
 	}
 
 	.developers-image {
-		padding: 8%;
+		padding: 0%;
 	}
 
 	.developer-name {
@@ -2245,7 +2325,7 @@ ul {
 	}
 
 	.developers-description {
-		padding: 0% 10%;
+		padding: 10% 10%;
 	}
 
 	.about-title {
